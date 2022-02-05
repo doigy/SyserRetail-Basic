@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<meta name = "viewport" content = "width = 1450"/>
+		<link rel = "stylesheet" href = "{{ url_for('static', filename = 'Login_style.css') }}">
+		<link rel = "stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity = "sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin = "anonymous"/>
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Comfortaa|Roboto">
+	</head>
+	<body>
+		<div class = "main-container">
+			<div class = "userentry-companylogo-container">
+				<div class = "companylogo-container">
+					<img src = "{{ url_for('static', filename = 'SyserTech-login(inverted).png') }}" class = "companylogo-image" alt = "company logo"/>
+				</div>
+				<div></div>
+				<div class = "userentry-container">
+					<form method = "POST">
+						<p class = "username-entry-label">username</p>
+						<input type = "text" name = "usernameentry" class = "username-entry-textbox" autocomplete = "off"/>
+						<p class = "userpassword-entry-label">password</p>
+						<input type = "password" name = "userpasswordentry" class = "userpassword-entry-textbox" autocomplete = "off"/>
+						<button type = "submit" value = "login" class = "login-button" title = "login">
+							<i class = "fas fa-sign-in-alt"></i>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type = "text/javascript">
+		var error = "{{ error }}";
+		if (error == "none"){
+			//pass
+		}else{
+			window.alert(error);
+		}
+	</script>
+</html>

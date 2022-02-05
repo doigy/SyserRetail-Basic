@@ -1,0 +1,237 @@
+body{
+	background-color: #EEEEEE;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.header-container{
+    background-color: #2D2D2D;
+    height: 4em;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    top: 0;
+}
+
+.nav-container{
+    background-color: #2D2D2D;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-recordsale-button, .nav-settings-button, .nav-logout-button{
+	color: #ECF0F1;
+	height: 2.9em;
+	width: 5.2em;
+	padding: 0.4em;
+	padding-top: 0.6em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+}
+
+.nav-settings-button{
+	background-color: #EEEEEE;
+	color: #1A1A1A;
+}
+
+.nav-recordsale-button:hover, .nav-logout-button:hover{
+	background-color: #EEEEEE;
+	color: #1A1A1A;
+}
+
+.nav-button-label{
+	font-size: 0.8em;
+	font-family: "Verdana", monospace;
+}
+
+.clientname-container{
+    color: #2EC9B0;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Comfortaa";
+    margin-top: 1.2em;
+}
+
+.companylogo-image{
+	margin-left: 0.5em;
+}
+
+#icon{
+	font-size: 1.45em;
+}
+
+.main-container{
+	width: 64em;
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.settings-container{
+	background-color: transparent;
+	color: #1A1A1A;
+	height: 24em;
+	width: 20em;
+	padding: 1.5em;
+	margin-top: 3em;
+	margin-left: 1em;
+	font-size: 1.2em;
+	font-family: verdana;
+}
+
+.shop-address-contact-container{
+	background-color: transparent;
+	color: #1A1A1A;
+	height: 24em;
+	width: 28em;
+	padding: 1.5em;
+	margin-top: 3em;
+	margin-left: 6em;
+	font-size: 1.2em;
+	font-family: verdana;
+}
+
+.shop-address-contact-container{
+	margin-left: 5.5em;
+}
+
+.useraccounts-container{
+	background-color: transparent;
+	color: #1A1A1A;
+	height: 10em;
+	width: 18em;
+	padding: 1.5em;
+	font-size: 1.2em;
+	font-family: verdana;
+	margin-top: 3em;
+	margin-left: 4em;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.existingaccounts-container{
+	height: 19em;
+	width: 18em;
+	overflow-y: scroll;
+}
+
+.existingaccounts-container::-webkit-scrollbar{
+	background-color: transparent;
+	width: 0.5em;
+}
+
+.existingaccounts-container::-webkit-scrollbar-thumb{
+	background-color: #1A1A1A;
+	border-radius: 2em;
+}
+
+.existingaccounts-info-container{
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+
+.restorebackups-container, .changeclosingtime-container, .refundvalidlimit-container, .sysersupport-container, .salestax-container, .clearholdingtokens-container, .cleardatabases-container, .clearreceipts-container, .shopaddress-container, .shopcontact-container, .shopname-container, .clientid-container, .hostdeivceinfo-container{
+	margin-top: 0.9em;
+}
+
+.closingtime-label, .restorebackups-label, .refundvalidlimit-label, .salestax-label, .clearholdingtokens-label, .cleardatabases-label, .clearreceipts-label, .username-label, .userpassword-label, .addnewaccount-label, .existingaccounts-label, .shopaddress-label, .shopcontact-label, .shopname-label, .clientid-label, .hostdeviceinfo-label{
+	font-size: 0.85em;
+	font-family: "Verdana", monospace;
+}
+
+.sysersupport-label{
+	font-size: 0.85em;
+	font-family: "Verdana", monospace;
+}
+
+.restorebackups-label, .clearholdingtokens-label, .cleardatabases-label, .clearreceipts-label, .addnewaccount-label, .existingaccounts-label{
+	font-size: 1em;
+}
+
+.closingtime-dropdown, .refundvalidlimit-textbox, .salestax-textbox, .username-textbox, .userpassword-textbox, .existingusername-textbox, .existingpassword-textbox, .shopname-textbox{
+	background-color: transparent;
+	color: #1A1A1A;
+	width: 6em;
+	font-size: 0.95em;
+	font-family: "Verdana", monospace;
+	border: none;
+	border-bottom: 0.15em solid #1A1A1A;
+}
+
+.username-textbox, .userpassword-textbox{
+	width: 6em;
+}
+
+.clientid-value, .hostdeviceinfo-value{
+	font-size: 0.95em;
+	font-size: "Verdana", monospace;
+}
+
+.shopname-textbox{
+	width: 20em;
+}
+
+.salestax-percentage-label{
+	font-size: 1em;
+	font-family: "Roboto", monospace;
+}
+
+.shopaddress-textarea, .shopcontact-textarea{
+	width: 26.8em;
+	background-color: transparent;
+	font-size: 0.95em;
+	font-family: "Verdana", monospace;
+	border: 0.15em solid #1A1A1A;
+}
+
+.delete-button, .restore-button, .modifysettings-button, .generatetestreceipt-button{
+	background-color: transparent;
+	font-size: 0.85em;
+	border-radius: 0.4em;
+}
+
+.modifysettings-button{
+	color: #24A08C;
+	border: 0.15em solid #24A08C;
+}
+
+.modifysettings-button:hover{
+	background-color: #24A08C;
+	color: #EEEEEE;
+}
+
+.restore-button{
+	color: #F1C40F;
+	border: 0.15em solid #F1C40F;
+}
+
+.restore-button:hover{
+	background-color: #F1C40F;
+	color: #EEEEEE;
+}
+
+.delete-button{
+	color: #FF0000;
+	border: 0.15em solid #FF0000;
+}
+
+.delete-button:hover{
+	background-color: #FF0000;
+	color: #EEEEEE;
+}
+
+.generatetestreceipt-button{
+	color: #24A08C;
+	font-size: 0.95em;
+	border: 0.15em solid #24A08C;
+}
+
+.generatetestreceipt-button:hover{
+	background-color: #24A08C;
+	color: #EEEEEE;
+}

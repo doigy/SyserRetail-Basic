@@ -1,0 +1,120 @@
+body{
+	background: rgb(236,240,241);
+	background: linear-gradient(90deg, rgba(236,240,241,1) 50%, rgba(52,224,196,1) 50%);
+	color: #EEEEEE;
+	margin: 0;
+}
+
+.main-container{
+	background-color: transparent;
+	height: 92vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.userentry-companylogo-container{
+	background-color: transparent;
+	height: 20em;
+	width: 50em;
+	display: grid;
+	grid-template-columns: 47% 6% 47%;
+}
+
+.userentry-companylogo-line{
+	background-color: #EEEEEE;
+	width: 0.1em;
+	border: none;
+}
+
+.userentry-container{
+	background-color: transparent;
+	padding: 1.5em;
+}
+
+.companylogo-container{
+	background-color: transparent;
+	height: 20em;
+	padding: 0;
+}
+
+.companylogo-image{
+	margin-top: 1em;
+	margin-left: -16.5em;
+}
+
+.username-entry-label, .userpassword-entry-label{
+	color: #2D2D2D;
+	margin-top: 1.5em;
+	font-family: "Verdana", monospace;
+	font-size: 1em;
+	letter-spacing: 0.25em;
+}
+
+.username-entry-textbox, .userpassword-entry-textbox{
+	background-color: transparent;
+	color: #2D2D2D;
+	width: 15em;
+	font-family: "Roboto", monospace;
+	font-size: 1.3em;
+	letter-spacing: 0.1em;
+	border: none;
+	border-bottom: 0.1em solid #2D2D2D;
+}
+
+.username-entry-textbox:focus, .userpassword-entry-textbox:focus{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 0.1em solid #2D2D2D;	
+}
+
+.login-button{
+	background-color: transparent;
+	color: #2D2D2D;
+	width: 4em;
+	margin-top: 1.5em;
+	font-size: 1.5em;
+	text-align: center;
+	border: 0.15em solid #2D2D2D;
+	border-radius: 0.4em;
+}
+
+.login-button:hover{
+	background-color: #2D2D2D;
+	color: #EEEEEE;
+}
+
+.contact-buttons-container{
+	widtth: 20em;
+	margin-top: 3em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.facebook-button, .instagram-button, .gmail-button{
+	height: 1.6em;
+	width: 1.6em;
+	padding: 0.4em;
+	font-size: 1.8em;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+}
+
+.facebook-button{
+	color: #3B5998;
+}
+
+.instagram-button{
+	color: #EEEEEE;
+	border-radius: 0.4em;
+	background: -webkit-linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.gmail-button{
+	color: #D44638;
+}
